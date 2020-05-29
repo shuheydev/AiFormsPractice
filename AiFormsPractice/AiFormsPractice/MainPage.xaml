@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AiFormsPractice.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:sv="clr-namespace:AiForms.Renderers;assembly=SettingsView"
+    mc:Ignorable="d">
+
+    <sv:SettingsView
+        Grid.Row="0"
+        CellDescriptionColor="Red"
+        CellHintFontSize="25"
+        CellValueTextFontSize="15"
+        FooterPadding="14,4,4,6"
+        HasUnevenRows="true"
+        HeaderFontSize="20"
+        HeaderHeight="50"
+        HeaderPadding="14,10,5,6"
+        HeaderTextVerticalAlign="End"
+        ShowArrowIndicatorForAndroid="True">
+
+        <sv:Section Title="Account Info">
+            <sv:TextPickerCell
+                x:Name="LoanType"
+                Title="Loan Type"
+                BackgroundColor="Magenta"
+                PageTitle="Select the loan type" />
+        </sv:Section>
+
+        <sv:Section Title="TestSection1">
+            <sv:EntryCell HintText="hello1" />
+            <sv:EntryCell HintText="hello2" />
+            <sv:EntryCell HintText="hello3" />
+            <sv:EntryCell HintText="hello4" />
+        </sv:Section>
+        <sv:Section Title="TestSection2">
+            <sv:EntryCell HintText="hello1" />
+            <sv:EntryCell HintText="hello2" />
+            <sv:EntryCell HintText="hello3" />
+            <sv:EntryCell HintText="hello4" />
+        </sv:Section>
+        <sv:Section Title="TestSection3">
+            <sv:EntryCell HintText="hello1" />
+            <sv:EntryCell HintText="hello2" />
+            <sv:EntryCell HintText="hello3" />
+            <sv:EntryCell HintText="hello4" />
+        </sv:Section>
+        <sv:Section Title="TestSection4">
+            <sv:EntryCell HintText="hello1" />
+            <sv:EntryCell HintText="hello2" />
+            <sv:EntryCell HintText="hello3" />
+            <sv:EntryCell HintText="hello4" />
+        </sv:Section>
+    </sv:SettingsView>
+    <!--<sv:SettingsView
+        x:Name="settings"
+        BackgroundColor="Magenta"
+        HeaderHeight="0"
+        HeightRequest="{Binding VisibleContentHeight, Source={x:Reference settings}}">
+        <sv:Section Title="Account Info">
+            <sv:TextPickerCell
+                x:Name="LoanType"
+                Title="Loan Type"
+                BackgroundColor="Magenta"
+                PageTitle="Select the loan type" />
+        </sv:Section>
+    </sv:SettingsView>-->
+
+</ContentPage>
